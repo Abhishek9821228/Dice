@@ -1,7 +1,8 @@
 import React from "react";
 
 export default function Die(props) {
-  // Assign dynamically dieFace according to props
+  
+  
   let dieFace = "";
   switch (props.value) {
     case 1:
@@ -27,8 +28,7 @@ export default function Die(props) {
   }
 
   return (
-    // if it's held (isHeld === true), its background color
-    // changes to a light green
+    
     <div
       className={props.isHeld ? "die-face isHeld" : "die-face"}
       onClick={props.holdDice}
@@ -37,7 +37,7 @@ export default function Die(props) {
         backgroundSize: "cover",
       }}
     >
-      {/* <h2 className="die-num">{props.value}</h2> */}
+      
     </div>
   );
 }
